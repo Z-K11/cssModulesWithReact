@@ -8,12 +8,12 @@
 
 .primary {
   composes: btn;
-  color: #ffffff;
-  background-color: #6e41e2;
+  composes: primaryBg from '../colors.module.css';
+  composes: primaryColor from '../colors.module.css';
 }
 
 .secondary {
   composes: btn;
-  color: #6e41e2;
-  background-color: #ffffff;
+  composes: secondaryColor from '../colors.module.css';
+  composes: secondaryBg from '../colors.module.css';
 }
