@@ -1,5 +1,5 @@
 import styles from './button.module.css';
-const Button = () => {
-  return <button className={styles.btn}>Submit</button>;
+const Button = ({ type = 'primary', label = 'Button' }) => {
+  return <button className={styles[type]}>{label}</button>;
 };
 export default Button;
